@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #1f1f1f;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
+.About{
+  margin-left: 1100px;
+  text-decoration: none;
+
+}
+
+header {
+  padding: 20px 10px;
+  background: #1f1f1f;
+}
+header nav {
+
+  float: right;
+}
+header ul{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header ul li :hover {
+    scale: 1.05;
+    box-shadow:15px 15px  #e2ddda ;
+    color: rgba(255, 102, 0, 0.6);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px ;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+header h1:hover {
+  color: #dc8246;
+  text-shadow: 0 10px 15px #dc8246;
+
+}
+header p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-right: 275px;
+}header p:hover {
+  color: #ff6600;
+  text-shadow: 0 10px 15px  rgba(255, 102, 0, 0.6);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  gap: 90px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+  margin-top: 90px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.6);
+  border: #121212;
+}
+.but{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.but:hover {
+  background-color: #dc8246;
+  box-shadow: 0 4px 15px rgba(220, 130, 70, 0.6);
+}
+.but a{
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background: #1f1f1f;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}footer:hover{
+ color: #ff6600;
+  text-shadow: 0 10px 15px #ff6600;
+}
+
+/* /* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 5px;
+  }
+
+  header nav {
+    float: none;
+    margin-top: 15px;
+  }
+
+  header ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  header ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    margin-right: 0;
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    margin-top: 40px;
+  }
+
+  .About {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Additional styles for very small screens */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .gallery img {
+    margin-top: 30px;
+  }
+
+  .but {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

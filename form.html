@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             height: 100vh;
+             margin-top: 150px;
+             height: 500px;
+             background-image:url("image/1.jpeg") ; 
+             background-size:cover ;
+             background-repeat: no-repeat; 
+             background-position: center; 
+           
+        }
+
+        .container{
+            background: rgba(255,255, 255,0.1);
+            border-radius: 15px;
+            padding: 30px 60px;
+            box-shadow: 00 20 rgba(0,0,0,0.2);
+            width: 320px;
+            height: 400px;
+            border: 3px solid black;
+            color: #fff;
+        }
+
+        form{
+            margin-top: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-image: url("photo15.jpg");
+            border: black;
+            border-radius: 15px;
+            background-size: cover;
+            height: 40vh;
+            width: 20vw;
+            color: white;
+        }
+
+        form:hover{
+            box-shadow: 0 4px 15px   rgb(12, 165, 231);
+            color: rgba(1, 9, 17, 0.897);
+            box-sizing: border-box;
+        }
+
+        div  h1{
+            text-align: center;
+            color: rgb(241, 236, 236);
+        }
+
+        div h1:hover{
+            box-shadow:0 4px 15px   rgb(12, 165, 231);
+            color:rgba(1, 9, 17, 0.897);
+            width: 200px;
+        }
+
+        button { text-decoration: none;
+            padding: 10px 15px;     
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover{
+            box-shadow:0 4px 15px   rgb(12, 165, 231);
+            color:rgba(1, 9, 17, 0.897);
+
+        }
+
+        button a{
+            color: rgba(19, 6, 6, 0.853);
+            text-decoration: none;
+        }
+
+        img{
+            height: 300px;
+            width: 500px;
+        }
+        
+        /* Responsive Design for Mobile Devices */
+        @media screen and (max-width: 768px) {
+            body {
+                margin-top: 50px;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .container {
+                width: 90%;
+                max-width: 300px;
+                height: auto;
+                min-height: 400px;
+                padding: 20px;
+            }
+
+            form {
+                width: 90%;
+                height: auto;
+                min-height: 40vh;
+                margin: 20px auto;
+            }
+
+            .label-container {
+                width: 100%;
+                max-width: 250px;
+                margin: 5px 0;
+            }
+
+            textarea.label-container {
+                height: 80px;
+            }
+
+            div h1 {
+                width: 100%;
+                margin-bottom: 20px;
+                box-shadow: none;
+            }
+
+            button {
+                margin-top: 15px;
+                width: 80%;
+                max-width: 200px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                margin-top: 30px;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+                width: 95%;
+            }
+
+            form {
+                width: 95%;
+            }
+
+            .label-container {
+                font-size: 14px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            button {
+                width: 90%;
+                padding: 8px 12px;
+            }
+
+            div h1 {
+                font-size: 24px;
+            }
+
+            br {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+            </style>
+</head>
+<body>
+    
+
+    <div>
+        <h1>Book Now</h1>
+    <form  class="container">
+        <label  for="Name">Name :</label>
+        <br>
+            <input  class="label-container" type="text" placeholder=" Enter your Name" required>
+            <br><br>
+            <label  for="Date">  Booking Data  :</label>
+            <br>
+            <input class="label-container" type="date" placeholder="Date" required>
+            <br><br>
+            <label for=" Address"> Address :</label>
+            <br>
+             <textarea class="label-container" name="Address" placeholder=" Enter your Address"></textarea >
+            <br><br>
+            <label for="email"> Email :</label>
+            <br>
+            <input class="label-container" type="email" placeholder=" Enter your Email" required>
+            <br><br>
+            <button>  <a href="thanks.html">Summit</a></button>
+    </form>
+    </div>
+
+</body>
+</html>
